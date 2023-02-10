@@ -1,0 +1,27 @@
+#define  _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <string.h>
+#include<stdlib.h>
+
+void print_table(int pi)
+{
+	int j;
+	for (j = 1; j <= pi; j++)
+	{
+		int s = 0;
+		for (s = 1; s <= j; s++)
+		{
+			printf("%d*%d=%-2d ", s, j, s * j);
+		}
+		printf("\n");
+	}
+}
+
+
+	int main()
+{
+	int i = 0;
+	scanf("%d", &i);
+	print_table(i);
+	return 0;
+}
